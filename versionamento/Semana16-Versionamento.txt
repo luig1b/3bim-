@@ -1,0 +1,6 @@
+Trunk-based e divergência de código
+Primeiro vamos explicar como funciona o (Trunk-based), é uma pratica de controle de versão, onde desenvolvedores de um código juntam seus códigos em uma ramificação principal - main - com frequência, eliminando  conflitos de mesclagens e ramos muito longos.
+
+A divergência de código, se torna visível quando os desenvolvedores de código separam branches e trabalham nelas por muito tempo, fazendo com que suas versões do código se distanciem do original, quando isso acontece a branch se torna muito extensiva e o numero de dados aumenta e isso abre a chance para que problemas de merge acontecer, existe um termo quando isso acontece e o seu nome é (merge hell).
+
+já sabendo de todos os contextos o modelo trunk-based é o melhor para solucionar esse problema já que todos vão trabalhar em uma mesma branch unica, chamada de trunk/main os desenvolvedores enviam commits rápidos e curto, isso reduz branchs extensas e reduz parcialmente o escopo de possives conflitos.

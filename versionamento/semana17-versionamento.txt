@@ -1,0 +1,48 @@
+Atividade de resolução de conflito
+
+1) Explique o que o Desenvolvedor A adicionou.
+Em base do código original, esse desenvolvedor adicionou o resultado em formato de variável, colocou um print mostrando o valor e retornou o resultado.
+
+2) Explique o que o Desenvolvedor B adicionou.
+Em base do código original, esse desenvolvedor adicionou um retorno direto do resultado igual o código original, a única diferença que ele colocou que se o valor for abaixo de 0 para retornar o valor 0.
+
+3) Responda: escolher apenas uma das versões faria perder alguma funcionalidade?
+A funcionalidade principal da função, que é o cálculo do valor com a sua taxa aplicada, não se perde em nenhum deles, então independente de qual escolher, a funcionalidade se mantém.
+
+4) Crie uma versão final que preserve as duas melhorias.
+def calcular_total(valor, taxa):
+ if valor<0:
+   return 0
+
+ total = valor + (valor*taxa)
+ print ("Total calculado: ",total)
+ return total
+
+5) Escreva uma justificativa técnica.
+A implementação do Dev A que foi o print, é necessário para a visualização do resultado do dado e armazenar seu resultado em uma variável, juntamente com a implementação do Dev B que é para evitar que o cálculo seja efetuado se o valor for 0, já que não tem como aplicar uma taxa em valr 0 (sempre retornará 0 mesmo com a taxa).
+
+6) Sugira uma mensagem de commit.
+"Alterações na função calcular_total para incluir a implementação efetuada pelo Dev A e Dev B, onde inclui o print do resultado, fazer o valor 0 sempre retornar 0 para evitar a execução da função e a armazenagem do resultado em uma variável para facilitar a leitura do resultado."
+
+7) Escreva um comentário de Pull Request explicando a decisão.
+"As versões do Dev A e Dev B ambas mantiveram a funcionalidade, porém como o Dev A colocou a armazenagem do dado em forma de variável e o Dev B colocou para retornar 0 caso o valor for 0, ambas tiveram condições ótimas necessárias para a função, já que uma inclui a visualização do dado e a outra prevenir a execução completa do cálculo caso o valor for 0, então juntamos ambas as versões em uma função só."
+
+8) Explique por que um histórico claro facilita o trabalho da equipe.
+Ela permite o que cada membro fez por si só, assim temos uma análise das mudanças de cada um e ver um resultado melhor e completo usando as versões de cada membro.
+Em suma permite uma análise completa e a possível junção do código de cada membro de um time.
+
+Revisão rápida
+1) O que é um fork?
+É quando você faz uma cópia de um repositório para a sua conta.
+
+2) Qual a função do push?
+Para enviar as alterações atuais do repositório local para o repositório no GitHub.
+
+3) Para que serve uma Pull Request?
+Para fazer merge das mudanças efetuadas em uma branch para a branch principal (main).
+
+4) Cite dois pontos que devem ser analisados em um Code Review.
+Um ponto é a análise da legibilidade e manutenibilidade do código, ver se está fácil de entender e manter. Outro ponto de observação é a correção de erros e como a lógica está funcionando no momento dentro do código.
+
+5) Por que um conflito de merge não deve ser tratado como uma "falha" da equipe?
+Por conta dela ser uma consequência natural do desenvolvimento colaborativo e paralelo, em suma é devido a um desenvolvedor enviar suas mudanças e dar merge enquanto outro desenvolvedor, ao mesmo tempo, faz a mesma ação
