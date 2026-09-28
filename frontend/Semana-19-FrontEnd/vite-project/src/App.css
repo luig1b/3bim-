@@ -1,0 +1,72 @@
+* { box-sizing: border-box; } 
+body { 
+    
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee; 
+
+} 
+
+.container { 
+    
+    width: 90%;
+    margin: 30px auto;
+
+} 
+
+h1 { 
+    
+text-align: center;
+
+} 
+
+.formulario { 
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px; } 
+    
+input { 
+    
+    padding: 10px; 
+
+} 
+
+button { 
+    
+    padding: 10px;
+    cursor: pointer; 
+
+} 
+
+.lista { 
+
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 10px;
+ margin-top: 20px; 
+
+} 
+
+.tarefa { 
+    
+    background-color: white;
+     padding: 15px;
+      border-radius: 8px;
+    
+}
+
+button:hover { 
+    
+    transform: scale(1.05); 
+
+}
+
+h1::before {
+    
+    content: "✓ "; 
+
+}
+
+@media (min-width: 768px) { .container { max-width: 800px; } .formulario { flex-direction: row; } .formulario input { flex: 1; } .lista { grid-template-columns: 1fr 1fr; } }
+

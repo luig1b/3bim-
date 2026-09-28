@@ -1,0 +1,24 @@
+	
+Importância: O CORS é importante porque permite que um site acesse uma API de outro domínio com segurança. Ele também ajuda a bloquear acessos que não foram autorizados.
+
+Cabeçalhos: Os principais são:
+
+Access-Control-Allow-Origin: mostra quais sites podem acessar a API.
+
+Access-Control-Allow-Methods: mostra quais métodos podem ser usados, como GET e POST.
+
+Access-Control-Allow-Headers: define quais cabeçalhos podem ser enviados.
+
+Permissão/Bloqueio: A API configura quais sites podem acessá-la. Se um site que não tem permissão tentar acessar, o navegador bloqueia o acesso.
+
+Erro na configuração: Usar Access-Control-Allow-Origin permite que qualquer site acesse a API. Isso pode causar problemas de segurança e até vazamento de dados.
+
+OAuth 2.0 no banco: Ele permite que outros aplicativos acessem dados do banco sem precisar receber a senha do usuário. Alguns tipos de fluxo são Authorization Code, Implicit, Password Credentials e Client Credentials.
+
+JWT Payload e Signature: O Payload guarda informações do usuário e suas permissões. A Signature serve para verificar se o token não foi alterado.
+
+Fluxo seguro: O cliente envia as credenciais. O servidor verifica os dados e retorna um JWT. Depois, o cliente usa o JWT no cabeçalho Authorization. A API verifica o token e libera o acesso.
+
+Medidas adicionais: Usar HTTPS, deixar os tokens com pouco tempo de validade e configurar o CORS de forma segura.
+
+Função principal: Acompanhar o funcionamento, a disponibilidade e a segurança da aplicação em tempo real.

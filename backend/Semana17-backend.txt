@@ -1,0 +1,11 @@
+1. Vantagem de usar um SDK em vez de integrar uma API diretamente
+A vantagem de usar SDK e pela sua rapidez e simplicidade no desenvolvimento, ele disponibiliza funções pré-construidas , além também de gerenciar automaticamente tarefas complexas, exemplo: autenticação, formatação de requisições, paginação e tratamento de erros padrão.
+2. Fatores a considerar ao escolher uma API de terceiros
+pode se considerar alguns fatores como, desempenho e confiabilidade, custos e limites, segurança, suporte.
+Esses fatores são os principais para se considerar usar uma api.
+3. Como tratar erros ao consumir dados de uma API
+precisa se tratar com cuidado já que um erro pode desestabilizar toda uma operação, exemplos de erros e como podem ser tratados.
+-Verificação de status http: Respostas de erro com base em códigos que o servidor retorna como: 404 para não encontrado,429 excesso de requisição e 500 falha interna da API.
+-Mensagens Amigáveis: Exibir alertas claros na interface para o usuário final, em vez de códigos brutos.
+4. Por que a autenticação é essencial na integração com API?
+Por que ela garanti a segurança dos dados que estão dentro da aplicação e garanti a segurança do controle acesso, ele também é um visualizador de quem esta fazendo requisições na aplicação.

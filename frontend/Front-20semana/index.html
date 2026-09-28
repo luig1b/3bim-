@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produto em destaque</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="produto" aria-labelledby="titulo-produto">
+      <img class="produto-img" src="img/produto.jpg" alt="Descrição do produto escolhido">
+
+      <div class="conteudo">
+        <h1 id="titulo-produto" class="entrada">Nome do produto</h1>
+        <p class="entrada descricao">Descrição curta do produto.</p>
+
+        <div class="acoes">
+          <button id="adicionar" aria-label="Adicionar produto ao carrinho">
+            Adicionar ao carrinho
+          </button>
+          <button id="saiba-mais" aria-expanded="false" aria-controls="detalhes">
+            Saiba mais
+          </button>
+        </div>
+
+        <p id="mensagem" aria-live="polite"></p>
+        <div id="detalhes" hidden>
+          <p>Informações adicionais do produto.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Importe GSAP ou Anime.js conforme orientação do professor -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

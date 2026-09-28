@@ -1,0 +1,18 @@
+1. Qual é a função de uma API?
+Permitir que uma aplicação solicite e compartilhe dados ou funcionalidades com outra aplicação de forma segura e padronizada.
+2. Qual é a diferença básica entre fetch e axios?
+O fetch é uma função nativa do próprio JavaScript retornando valores em Json, sendo um passo extra com os dados brutos. Já o axios é uma função automática que trás os dados em objeto JavaScript direto e montado em formato *.data*.
+3. Por que devemos usar tratamento de erros?
+Para evitar que a aplicação trave ou quebre quando alguma funcionalidade falhar.
+4. O que await faz em uma operação assíncrona?
+Ela pausa temporariamente a execução da função até que a requisição termine e os dados sejam totalmente entregues, garantindo que o código não tente usar dados que ainda não tem.
+5. Por que WebSocket é adequado para um chat?
+Porque ela mantém uma conexão contínua e aberta entre o navegador e o servidor, permitindo o envio e recebimento de mensagens de forma instantânea sem a necessidade de atualizar a página ou fazer novos pedidos HTTP.
+6. O que acontece quando o servidor recebe uma mensagem no chat da atividade?
+O servidor recebe o texto enviado pelo cliente e o envia imediatamente para todos os outros usuários conectados na mesma sesão.
+7. O que significa pedir somente nome e e-mail em uma consulta GraphQL?
+Significa economia de banda e perfomance, pois o servidor será exigido menos, tratando estritamente os campos solicitados, ignorando dados desnecessários como endereço, telefone ou ID.
+8. Qual é a diferença entre schema e resolver?
+O schema é o contrato que define a estrutura teórica dos dados disponíveis, enquanto o resolver é a função prática em JavaScript que realmente busca e entrega esses dados.
+9. Para que serve o argumento estoqueMin?
+Serve como um filtro na consulta para trazer apenas os produtos que possuem uma quantidade de estoqeu igual ou maior do que o número especificado

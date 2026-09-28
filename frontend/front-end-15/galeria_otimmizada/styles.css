@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+   
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+  }
+   
+  .cabecalho {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+   
+  .galeria {
+    width: min(1100px, 92%);
+    margin: 0 auto 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+   
+  .cartao {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    background: #ffffff;
+    box-shadow: 0 0.25rem 0.8rem rgba(0, 0, 0, 0.12);
+  }
+   
+  .cartao img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+   
+  .cartao figcaption {
+    padding: 0.8rem;
+    font-weight: 700;
+  }
+   
+  @media (max-width: 768px) {
+    .galeria {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+   
+  @media (max-width: 480px) {
+    .galeria {
+      grid-template-columns: 1fr;
+    }
+  }
+  

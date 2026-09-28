@@ -1,0 +1,13 @@
+Questionário
+1 - oque é um contêiner?
+.R: um contêiner nada mais do que um ambiente isolado que reúne uma aplicação e outros componentes que ela precisa para funcionar.
+2 - Qual é a função do Docker em relação aos contêineres?
+.R: Docker é um ambiente que gerência contêineres de forma prática e organizada.
+3 - Para que o Kubernetes pode ser utilizado?
+.R: Ele pode ser usado para organizar, controlar e distribuir contêineres dentro de um ambiente próprio, 
+além de aumentar ou diminuir suas instâncias conforme as necessidades.
+4 - Qual é a diferença entre monitoramento e logs?
+.R: Monitoramento: Acompanha o funcionamento e desempenho do sistema.
+logs: Registram informações, eventos e erros que acontecem na aplicação.
+5 - Se um microsserviço começar a receber muitos acessos, qual solução pode ser utilizada para reduzir a sobrecarga?
+.R: Criar mais instâncias do microsserviços e distribuir os acessos entre elas, reduzindo a sobrecarga
