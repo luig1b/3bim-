@@ -1,0 +1,35 @@
+Relatório Técnico e Resolução das Etapas
+
+Etapa 1 — Análise de correlação
+
+A matriz gerada revela uma altíssima correlação positiva (~0.9081) entre as variáveis horas_estudo e nota_anterior. No contexto educacional, isso significa que essas duas métricas caminham juntas: alunos que dedicam mais horas aos estudos registram notas proporcionalmente maiores, indicando que ambas carregam quase a mesma informação estatística para o modelo preditivo.
+
+Etapa 2 — Redução de colinearidade
+
+Diante da colinearidade extrema (0.90), a variável nota_anterior deve ser removida se utilizarmos algoritmos lineares clássicos (como Regressão Linear), mantendo apenas horas_estudo. justificativa reside no fato de que manter ambas infla artificialmente a variância dos coeficientes do modelo, tornando-o instável e prejudicando sua capacidade de mensurar o real impacto individual de cada fator no desempenho final do estudante.
+
+Etapa 3 — Criação de nova feature
+
+A criação de engajamento_total (frequência + participação) condensa múltiplos comportamentos comportamentais ativos do estudante em um único indicador holístico. Essa combinação ajuda o algoritmo ao diminuir o ruído de variáveis isoladas, gerando um sinal preditivo unificado mais forte sobre o comprometimento diário do aluno na escola.
+
+Etapa 4 — Aplicação de PCA
+
+Ao aplicar o PCA sobre os dados padronizados, transformamos o espaço amostral original de 5 dimensões em componentes ortogonais (não correlacionados). Os dois primeiros componentes principais (PC1 e PC2) conseguiram capturar, juntos, 62,54% da variância total dos dados originais. O PCA compactou a informação útil eliminando a redundância da colinearidade.
+
+ 
+
+Análise Final (Respostas do Questionário)
+
+Como a seleção de features ajuda na generalização? Ela reduz a complexidade desnecessária do modelo (overfitting), permitindo que ele aprenda padrões reais e genéricos em vez de memorizar ruídos específicos da base de treino.
+
+Por que colinearidade pode prejudicar modelos? Porque cria instabilidade numérica. O modelo não consegue discernir qual das variáveis correlacionadas está de fato causando o impacto no alvo, distorcendo a importância dos coeficientes.
+
+Quando usar PCA? Quando há alta colinearidade generalizada, excesso de dimensões (recursos) ou restrições severas de custo computacional para o treinamento.
+
+O modelo apresentou melhora após a seleção ou a transformação das variáveis? Por quê? Sim. Ao remover a redundância linear de horas_estudo e nota_anterior através da eliminação de atributos ou compressão via PCA, o modelo torna-se estatisticamente robusto, resultando em previsões mais estáveis para novos alunos.
+
+Quais variáveis pareciam trazer informações redundantes? horas_estudo e nota_anterior.
+
+A redução de dimensionalidade alterou a interpretação dos dados? Sim. Os eixos originais perdem o sentido direto de negócio (como "horas de estudo"). Em vez disso, passamos a analisar os componentes (PC1 e PC2) como índices matemáticos abstratos combinados.
+
+Houve impacto no desempenho do modelo após aplicar PCA ou remover variáveis correlacionadas? O impacto prático é a blindagem do modelo contra variâncias extremas, otimizando o erro de teste e a estabilidade das previsões de evasão.

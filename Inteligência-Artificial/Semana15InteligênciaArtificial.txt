@@ -1,0 +1,29 @@
+Semana 15
+A atividade quer mostrar pra gente como uma ia de uma empresa feita em python reage com alguns testes e se ela consegue cumprir seu papel.
+
+Quando usamos o código e digitamos os comandos não obtemos a resposta que queremos pois no código apresentado não temos o sintoma desejado salvo no código, só de vermos isso já sabemos que o código não irá retornar nada e não iria conseguir ajudar o usuário.
+Resultado da IA ( Chat GPT - openAI )
+Ao usarmos o código na IA e fornecemos alguns dados temos esse resultado:
+
+Teste 1:
+
+Queixa: “Não consigo puxar o ar e minha visão escureceu.”
+
+Resultado: ALTA
+
+Justificativa: A IA interpretou “não consigo puxar o ar” como falta de ar e “minha visão escureceu” como possível desmaio/pré-síncope.
+
+Teste de robustez:
+
+Queixa: “Não estou com febre, na verdade estou gelado e tremendo muito, sentindo uma pontada fina no braço esquerdo.”
+
+Resultado: ALTA
+
+Justificativa: A atividade indica que a IA provavelmente classificará a situação como alta, considerando o conjunto dos sintomas.
+
+Como a IA funciona com base no código mas também com o Prompt podemos dizer que ela consegue dar um resultado mais assertivo, porém ainda sim precisaríamos de mais dados pra dizer que o sistema baseado na IA e eficaz.
+
+Conclusão 
+Podemos dizer que a IA com as implementações do código, conseguiu entregar um resultado satisfatório, enquanto o python usando respostas pré prontas e sem variações, não consegue entregar um resultado bom para os usuários.
+
+Obs: não consegui colocar os códigos pois estou fazendo a atividade pelo celular, desculpa pelo incomodo.
